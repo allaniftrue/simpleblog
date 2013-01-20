@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'museo-slab';
+    src: url('../font/museo_slab_300-webfont.eot');
+    src: url('../font/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_300-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo-slab';
+    src: url('../font/museo_slab_500-webfont.eot');
+    src: url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_500-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    line-height: 22px;
+    color: #4E443C;
+    background: #F0EFE7 url(../img/body.jpg);
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: solid 1px #E2E0D8;
+    margin: 1em 0; padding: 0; 
+}
+
+.uneditable-input {
+    cursor: text;
+}
+
+label.required:before {
+    content:"*";
+    color:red;
+    font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+label.ok {
+    background:url("../img/valid.gif") no-repeat;
+    padding-left:16px;
+}
+label.error {
+    color:#d00;
+    text-transform:none;
+    margin-left:6px;
+    display: inline
+}
+
+.form-signin {
+    max-width: 300px !important;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #E2E0D8;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+}
+
+div.main {
+    background-color: #FCFCFA;
+    border: solid 1px #E2E0D8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 22px;
+    margin-bottom: 10px
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+div.modal-body {
+    text-align: justify;
+}
+
+td#actions a {
+    margin:0 2px;
+}

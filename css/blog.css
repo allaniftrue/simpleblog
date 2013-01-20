@@ -1,0 +1,109 @@
+/* 
+    Document   : blog
+    Created on : 01 20, 13, 7:45:37 AM
+    Author     : tux
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face {
+    font-family: 'museo-slab';
+    src: url('../font/museo_slab_300-webfont.eot');
+    src: url('../font/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_300-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo-slab';
+    src: url('../font/museo_slab_500-webfont.eot');
+    src: url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_500-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: #ccc url(../img/bg.png) repeat;
+    color: #333;
+}
+
+h1, h2, h3, h4,h5, h6 {
+    font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.container {
+    margin-top: 70px;
+    padding:5px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    padding-bottom: 40px;
+}
+
+div.posts {
+    margin-bottom: 20px;
+}
+
+div#post-info,div#single-view {
+    border-top: 1px #A49B91 dotted;
+    border-bottom: 1px #A49B91 dotted;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding:8px 0;
+}
+
+div#post-info ul li, div#single-view ul li{
+    float: left;
+    list-style: none;
+    padding: 2px 15px;
+}
+
+div#post-info ul li:first-child {
+    padding-left: 0;
+    margin-left:0;
+}
+
+div#post-info ul li:last-child {
+    float:right;
+}
+/* SIDEBAR */
+div#sidebar {
+    margin: 30px;
+}
+
+div#widget {
+    margin-bottom: 20px;
+}
+
+div#widget ul {
+    margin-left: 0;
+}
+
+div#widget ul li {
+    list-style: none;
+    border-bottom: 1px dotted #A49B91;
+}
+
+/* COMMENT */
+div#comment-wrapper hr {
+    margin-top: 30px;
+}
+
+div#comment-wrapper ul li{
+    float: left;
+    list-style: none;
+}
+
+div#comment-wrapper ul li:last-child {
+    float: right;
+}
+
+/* FOOTER */
+footer {
+    color:#333;
+    font-size: 11px;
+    text-shadow: 0 0 1px #fff;
+    margin: 10px auto;
+    margin-bottom: 90px;
+    text-align: center;
+}
