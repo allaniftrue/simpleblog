@@ -22,11 +22,11 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="<?=base_url()?>css/bootstrap.css" rel="stylesheet">
-    <link href="<?=base_url()?>css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="<?=base_url()?>css/global.css" rel="stylesheet">
-    <link href="<?=base_url()?>css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>css/global.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>css/font-awesome.css" rel="stylesheet">
     
-    <script>var base_url = "<?=base_url().index_page()?>";</script>
+    <script>var base_url = "<?php echo base_url().index_page(); ?>";</script>
   </head>
   <body>

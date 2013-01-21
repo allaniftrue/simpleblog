@@ -5,16 +5,16 @@
 	    <title>Administration Panel</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	    <link rel="stylesheet" href="<?=base_url()?>css/bootstrap.min.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/font-awesome.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/bootstrap-responsive.min.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/global.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/font-awesome.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/bootstrap-responsive.min.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/global.css" />
 	</head>
 	<body>
             <div class="container">
-                <form method="post" action="<?=base_url()?>admin/login/auth" class="form-signin">
+                <form method="post" action="<?php echo base_url();?>admin/login/auth" class="form-signin">
                     <h2 class="form-signin-heading">Please sign in</h2>
-                    <input type="hidden" name="csrf_name" value="<?=$hash?>" />
+                    <input type="hidden" name="csrf_name" value="<?php echo $hash; ?>" />
                     <input type="text" name="username" class="input input-medium input-block-level" value="" placeholder="Username" />
                     <input type="password" name="password" class="input input-medium input-block-level" value=""  placeholder="Password" />
                     <input type="submit" value="Login" class="btn btn-primary" /> &nbsp;&nbsp;<a href="#">I forgot my password?</a>
@@ -27,7 +27,7 @@
                     ?>
                             <br /><br />
                             <div class="alert alert-error">
-                                <i class="icon-exclamation-sign"></i> <?=$message?>
+                                <i class="icon-exclamation-sign"></i> <?php echo $message; ?>
                             </div>
                     <?php
                         $array = array(

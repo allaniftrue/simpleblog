@@ -1,6 +1,6 @@
 <hr>
 <footer>
-    <p>&copy; <?=COMPANY_NAME?> <?= date('Y') ?></p>
+    <p>&copy; <?php echo COMPANY_NAME;?> <?php echo date('Y'); ?></p>
 </footer>
 </div><!--/.fluid-container-->
 </body>
