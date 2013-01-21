@@ -12,7 +12,7 @@
                         <h2>Blog Posts</h2>
                     </div>
                     
-                    <p><a class="btn btn-primary" href="<?=base_url()?>admin/posts/add-new">Add New Post</a></p>
+                    <p><a class="btn btn-primary" href="<?php echo base_url(); ?>admin/posts/add-new">Add New Post</a></p>
                     <table class="table table-stripped table-condensed table-bordered">
                         <thead>
                             <tr>
@@ -32,14 +32,14 @@
                                         $summary = strip_tags(html_entity_decode($posts[$x]->post));
                             ?>
                             <tr>
-                                <td><?=ucwords($posts[$x]->title)?></td>
-                                <td><?=word_limiter($summary,20)?></td>
-                                <td><?=$posts[$x]->username?></td>
-                                <td><?=date('M d, Y', strtotime($posts[$x]->entry_date))?></td>
-                                <td><?=$posts[$x]->comment_sum?></td>
+                                <td><?php echo ucwords($posts[$x]->title);?></td>
+                                <td><?php echo word_limiter($summary,20);?></td>
+                                <td><?php echo $posts[$x]->username;?></td>
+                                <td><?php echo date('M d, Y', strtotime($posts[$x]->entry_date));?></td>
+                                <td><?php echo $posts[$x]->comment_sum;?></td>
                                 <td id="actions">
-                                    <a href="<?=base_url()?>admin/posts/edit-post/<?=$posts[$x]->id?>" title="Edit post" id="edit"><i class="icon icon-edit icon-large"></i></a>
-                                    <a href="javascript:void(0);" id="delete" data-id="<?=$posts[$x]->id?>" title="Delete post"><i class="icon icon-trash icon-large"></i></a>
+                                    <a href="<?php echo base_url()?>admin/posts/edit-post/<?php echo $posts[$x]->id; ?>" title="Edit post" id="edit"><i class="icon icon-edit icon-large"></i></a>
+                                    <a href="javascript:void(0);" id="delete" data-id="<?php echo $posts[$x]->id; ?>" title="Delete post"><i class="icon icon-trash icon-large"></i></a>
                                 </td>
                             </tr>
                             <?php
@@ -52,7 +52,7 @@
                             ?>
                         </tbody>
                     </table>
-                    <?=$this->pagination->create_links();?>
+                    <?php echo $this->pagination->create_links();?>
                 </div><!--/row-->
             </div><!--/main-->
         </div><!--/span-->

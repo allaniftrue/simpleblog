@@ -14,14 +14,14 @@
                     <div class="input-form">
                         <form method="POST" action="" id="update-form">
                             <p><label for="title" class="required"><strong>Title</strong></label>
-                                <input type="text" class="input input-xxlarge" name="title" id="title" value="<?=$info[0]->title?>" />
+                                <input type="text" class="input input-xxlarge" name="title" id="title" value="<?php echo $info[0]->title;?>" />
                             </p>
                             <p><label for="blogentry" class="required" id="blogentrylabel"><strong>Post</strong></label>
-                                <textarea id="blogentry" name="blogentry" class="input-block-level" rows="10"><?=$info[0]->post?></textarea>
+                                <textarea id="blogentry" name="blogentry" class="input-block-level" rows="10"><?php echo $info[0]->post;?></textarea>
                             </p>
                             <br />
                             <p>
-                                <input type="hidden" name="id" id="id" value="<?=$info[0]->id?>" />
+                                <input type="hidden" name="id" id="id" value="<?php echo $info[0]->id;?>" />
                                 <button type="submit" class="btn btn-primary" id="savecontent">Update Article</button>
                             </p>
                         </form>
