@@ -2,12 +2,12 @@
     
     <div id="widget">
         <h3>Follow Me</h3>
-        <a href="<?=base_url()?>rss"><i class="icon-rss icon-3x"></i></a>
+        <a href="<?php echo base_url();?>rss"><i class="icon-rss icon-3x"></i></a>
     </div>
     
     <div id="widget">
         <h3>Search</h3>
-        <form method="post" action="<?=base_url()?>search">
+        <form method="post" action="<?php echo base_url();?>search">
             <div class="input-append">
                 <input class="span2" id="appendedInputButtons" name="keyword" type="text" placeholder="keyword..."/>
                 <button class="btn" type="submit">Search</button>

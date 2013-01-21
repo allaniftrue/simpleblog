@@ -6,13 +6,13 @@
 <html lang="en">
 	<head>
 	    <meta charset="utf-8">
-	    <title><?=! empty($title) ? ucwords($title) : COMPANY_NAME?></title>
+	    <title><?php if(!empty($title)) echo ucwords($title); else echo COMPANY_NAME;?></title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	    <link rel="stylesheet" href="<?=base_url()?>css/bootstrap.min.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/font-awesome.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/bootstrap-responsive.min.css" />
-	    <link rel="stylesheet" href="<?=base_url()?>css/blog.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/font-awesome.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/bootstrap-responsive.min.css" />
+	    <link rel="stylesheet" href="<?php echo base_url();?>css/blog.css" />
 	</head>
 	<body>
             <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,7 +25,7 @@
                       <div class="nav-collapse collapse">
                         <ul class="nav">
                           <li class="">
-                            <a href="<?=base_url()?>">Home</a>
+                            <a href="<?php echo base_url();?>">Home</a>
                           </li>
                           <li class="">
                             <a href="#">About Us</a>
