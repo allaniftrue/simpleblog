@@ -40,6 +40,10 @@ hr {
     margin: 1em 0; padding: 0; 
 }
 
+textarea {
+    width:30%;
+}
+
 .uneditable-input {
     cursor: text;
 }
@@ -107,4 +111,24 @@ div.modal-body {
 
 td#actions a {
     margin:0 2px;
+}
+
+div#avatar-holder {
+    width:150px;
+    height:150px;
+}
+
+div#uploader {
+    height:160px;
+    width:160px;
+    background: transparent url('../profile/default-inverse.gif') top left no-repeat;
+    color: #f4f4f4;
+    display: none;
+    position: absolute !important;
+    text-align: center;
+    padding-top:70px;
+}
+
+div#uploader input{
+    height:160px;
 }
