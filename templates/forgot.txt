@@ -1,0 +1,9 @@
+<p>Hi ##USERNAME##</p>
+
+<p>It seems you have requested a new password for your ##HOST## account.</p>
+
+Please click the following link: <a href="##CONFIRM_LINK##">##CONFIRM_LINK##</a> to confirm that you want a new password.</p>
+
+<p>Kind regards,</p>
+
+<p>The ##HOST## Team </p>
