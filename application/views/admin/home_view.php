@@ -17,7 +17,7 @@
                     <input type="hidden" name="csrf_name" value="<?php echo $hash; ?>" />
                     <input type="text" name="username" class="input input-medium input-block-level" value="" placeholder="Username" />
                     <input type="password" name="password" class="input input-medium input-block-level" value=""  placeholder="Password" />
-                    <input type="submit" value="Login" class="btn btn-primary" /> &nbsp;&nbsp;<a href="#">I forgot my password?</a>
+                    <input type="submit" value="Login" class="btn btn-primary" /> &nbsp;&nbsp;<a href="<?php echo base_url();?>admin/forgot">I forgot my password?</a>
                     <?php
                     
                         $message = ! empty($message) ? $message : $this->session->userdata("message");

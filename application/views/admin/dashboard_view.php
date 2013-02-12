@@ -13,4 +13,7 @@
           </div><!--/main-->
         </div><!--/span-->
       </div><!--/row-->
+      <script type="text/javascript" src="<?=base_url()?>js/jquery.js"></script>
+      <script type="text/javascript" src="<?=base_url()?>js/bootstrap-dropdown.js"></script>
+      <script type="text/javascript" src="<?=base_url()?>js/bootstrap-collapse.js"></script>
     <?php $this->load->view("admin/footer_view"); ?>

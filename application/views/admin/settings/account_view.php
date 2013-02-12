@@ -1,5 +1,5 @@
-<?php $this->load->view("header_view"); ?>
-<?php $this->load->view("top_menu/top_nav_view"); ?>
+<?php $this->load->view("admin/header_view"); ?>
+<?php $this->load->view("admin/top_menu/top_nav_view"); ?>
 <?php
     $atts = array(
                     'width'      => '600',
@@ -14,7 +14,7 @@
 ?>
 <div class="container-fluid">
   <div class="row-fluid">
-    <?php $this->load->view("sidebar/sidebar_profile_view"); ?>
+    <?php $this->load->view("admin/sidebar/sidebar_profile_view"); ?>
     <div class="span9">
       <div class="main">
         <div class="row-fluid">
@@ -42,12 +42,15 @@
       </div><!--/main-->
     </div><!--/span-->
   </div><!--/row-->
-  <hr>
-  <footer>
-    <p>&copy; Company 2012</p>
-  </footer>
 </div><!--/.fluid-container-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">Result</h3>
 </div><div class="modal-body"></div><div class="modal-footer"><button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Ok</button></div></div>
-<?php $this->load->view("footer_view"); ?>
+<script type="text/javascript" src="<?=base_url()?>js/jquery.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/account.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="<?=base_url()?>js/jquery.validate.min.js"></script>
+<?php $this->load->view("admin/footer_view"); ?>
