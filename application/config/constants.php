@@ -59,7 +59,7 @@ define("HASH_SALT_INDEX", 2);
 define("HASH_PBKDF2_INDEX", 3);
 
 
-define("COMPANY_NAME", "SAMPLE BLOG");
+define("COMPANY_NAME", "SIMPLE BLOG");
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
